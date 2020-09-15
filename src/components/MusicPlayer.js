@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 
 class MusicPlayer extends Component {
-  constructor() {
-    super();
-    this.state = {
-      play: false
-    }
-    this.audio = new Audio(this.props);
+  state = {
+    play: false
   }
+  audio = new Audio(this.props);
   
   componentDidMount() {
     this.audio.addEventListener('ended', () => this.setState({ play: false }));
