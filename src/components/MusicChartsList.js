@@ -10,7 +10,7 @@ const MusicChartsList = props => {
   song={entry['im:name'].label}>
   </MusicChartEntry>);
 
-  return <> <h3>Top 20</h3> {chartsNodes}</>;
+  return <> <h3>Top 20</h3> <ol>{chartsNodes}</ol></>;
 }
 
 export default MusicChartsList;
