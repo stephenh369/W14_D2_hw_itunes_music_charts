@@ -1,9 +1,8 @@
 import React from 'react';
-import MusicPlayer from './MusicPlayer';
 
 const Entry = props =>
   <> 
-  <li>{props.artist} - {props.song} <MusicPlayer audio={props.audio}/></li>
+  <li>{props.artist} - {props.song} <audio controls src={props.audio}></audio></li>
   </>;
   
 export default Entry;
